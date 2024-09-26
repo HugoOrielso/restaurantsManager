@@ -1,0 +1,72 @@
+.formulario-login{
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 12em;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    width: 100%;
+    border-radius: 10px;
+}
+.main-inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column  ;
+}
+.container-form{
+    display: flex;
+    margin-top: 4em;
+    width: 40%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 100%;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.container-campos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: center;
+}
+.input-form{
+    max-width: 28em;
+    min-width: 15em;
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid #c0c0c0;
+    outline: 0 !important;
+    box-sizing: border-box;
+    padding: 12px 15px;
+}
+
+.formulario-login > button{
+    border-radius: 20px;
+    border: 0 !important;
+    outline: 0 !important;
+    background: teal;
+    color: white;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 20em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all .3s ease;
+}
+
+.formulario-login > button:hover{
+    transform: scale(.95);
+}
+
+.formulario-login > button:active{
+    transform: scale(1.05);
+}
+
+.error-input{
+    border: 1px solid red; 
+    box-shadow: 0 0 5px red; 
+}

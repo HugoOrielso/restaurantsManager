@@ -1,0 +1,12 @@
+.circle-img{
+    height: 15px;
+    width: 15px;
+    display: flex;
+    padding-right: 2px;
+}
+
+.name-start{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

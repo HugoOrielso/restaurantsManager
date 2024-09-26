@@ -1,0 +1,102 @@
+.productos-venecia {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+  
+  .productos-venecia ul {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(
+        250px,
+        1fr
+      )
+    );
+    gap: 1rem;
+    padding: 1em;
+    width: 100%;
+  }
+
+  .main-tienda{
+    background: #ececec;
+  }
+
+  .text-product{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+  
+  .productos-venecia li {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, .1);
+    max-width: 600px;
+    border: 1px solid var(--primaryColorPromo,#0ae98a);
+    border-radius: 4px;
+    color: black;
+    overflow: hidden;
+  }
+  
+  .productos-venecia h3 {
+    margin: 0;
+  }
+  
+  .productos-venecia span {
+    font-size: .7rem;
+    opacity: .9;
+  }
+
+  .strong-name{
+    font-size: .8em;
+  }
+  
+  .productos-venecia img {
+    border-radius: 8px;
+    width: 100%;
+    height: 150px;
+    display: block;
+    object-fit: contain;
+    background: #fff;
+  }
+
+  .filters-venecia{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+  }
+  .utils-producto{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em 0;
+  }
+
+  .input-filter{
+    padding: .5em;
+    width: 20em;
+  }
+
+  .div-busqueda{
+    display: flex;
+    align-items: end;
+  }
+
+  .input-filter.busqueda{
+    width: 30em;
+  }
+
+  .button-add-to-cart{
+    cursor: pointer;
+    background: green;
+    border: none;
+    padding: .5em;
+  }
+  .button-add-to-cart.remove{
+    background: red;
+    cursor: pointer;
+  }

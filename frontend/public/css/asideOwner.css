@@ -1,0 +1,78 @@
+.aside-owner{
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: hidden;
+    height: 100%;
+    align-items: center;
+    max-width: 260px;
+    width: 100%;
+    justify-content: space-between;
+    border: solid 1px #e2e8f0;
+}
+
+
+.logo-aside-bar{
+    width: 90%;
+    border-radius: 50%;
+    padding-left: 1em;
+    max-width: 4em;
+}
+
+.ul-aside-owner{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    list-style: none;
+    background: white;
+    margin: 0;
+    flex-grow: 1;
+    gap: 10px;
+    position: fixed;
+    max-width: 260px;
+    width: 100%;
+    padding: 0;
+}
+.li-aside-owner{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+
+.a-aside-owner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    gap: 15px;
+    height: 2em;
+    padding-left: .5em;
+    transition: all .5s ease;
+    position: relative;
+}
+
+
+.a-aside-owner.active{
+    background-color: rgb(230, 244, 255);
+    color: rgb(22, 119, 255);
+    border-right: 2px solid rgb(22, 119, 255);
+}
+
+.a-aside-owner:hover{
+    background-color: rgb(230, 244, 255);
+
+}
+
+.btn-aside-owner{
+    padding: 1em;
+    margin-bottom: 1em;
+    background:  #eb001b;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}

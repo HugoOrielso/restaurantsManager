@@ -1,0 +1,23 @@
+.section-todos-los-pedidos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 1em;
+    padding: 1em;
+}
+
+.pedido-cocina{
+    padding: .5em;
+}
+
+.tipo-pedido{
+    display: flex;
+    flex-direction: column;
+}
+.tipo-pedido > p{
+    padding: 0;
+    margin: 0;
+}
+
+.tipo-delivery{
+    padding: 0;margin: 0;
+}

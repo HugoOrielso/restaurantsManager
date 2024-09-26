@@ -1,0 +1,197 @@
+.add{
+  width: 100dvw;
+  height: 100dvh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.724);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    
+}
+
+.container-add{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+.add-product{
+    max-height: 2em;
+    background-color: #635bff;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.add-product:hover{
+    transform: scale(1.05);
+}
+
+
+.modal{
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #240046;
+}
+
+.close{
+    position: absolute;
+    top: -100px;
+    right: -30px;
+    cursor: pointer;
+    background: red;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+
+.title-add{
+    color: aqua;
+    position: relative;
+}
+.title-add-gasto{
+  color: aqua;
+  position: relative;
+}
+
+.title-add::before {
+    width: 18px;
+    height: 18px;
+  }
+  .title-add-gasto::before{
+    width: 18px;
+    height: 18px;
+  }
+  
+  .title-add::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  .title-add-gasto::after{
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .title-add::before,
+  .title-add::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 50px;
+    top: 10px;
+    background-color: #00bfff;
+  }
+  
+  .title-add-gasto::before,
+  .title-add-gasto::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 40px;
+    top: 10px;
+    background-color: #00bfff;
+  }
+
+  .gasto-div{
+    min-width: 21em;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  .textarea , .monto{
+    width: 100%;
+    min-height: 2em;
+
+  }
+  .textarea{
+    height: 5em;
+  }
+  .close-modal{
+    position: absolute;
+    top: -105px;
+    right: -25px;
+    cursor: pointer;
+    background: red;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }
+.form-add{
+    position: relative;
+    display: flex;
+    flex-wrap:  wrap;
+    max-width: 400px;
+    justify-content: space-between;
+}
+
+.item-add{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: start;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.item-add > input{
+    padding: .5em;
+}
+
+
+.btn-agregar {
+    padding: 12.5px 30px;
+    cursor: pointer;
+    width: 100%;
+    border: 0;
+    border-radius: 100px;
+    background-color: #2ba8fb;
+    color: #ffffff;
+    font-weight: Bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+  
+  .btn-agregar:hover {
+    background-color: #6fc5ff;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+  }
+  
+  .btn-agregar:active {
+    background-color: #3d94cf;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+  }
+
+@keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }

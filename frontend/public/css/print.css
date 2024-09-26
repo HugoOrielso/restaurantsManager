@@ -1,0 +1,42 @@
+
+@media print {
+    .noPrint {
+      visibility: hidden;
+      margin: 0;
+      padding: 0;
+    }
+    .name-start{
+      font-size: 12px;
+    }
+    .cantidades{
+      font-size: 12px;
+    }
+    .total-detalle{
+        font-size: 12px;
+    }
+    .circle-img{
+      opacity: 0;
+      height: 0;
+      width: 0;
+    }
+  
+    #bill-area, #bill-area * {
+      visibility: visible;
+      max-width: 450px;
+      width: 100%;
+    }
+    
+    .ruta-domi{
+      opacity: 0;
+      height: 0;
+      width: 0;
+    }
+    #bill-area {
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  

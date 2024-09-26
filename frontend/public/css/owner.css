@@ -1,0 +1,441 @@
+.main-propietario{
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    background: #f4f5fb;
+    min-height: 100hv;
+}
+
+
+.container-table{
+    padding: .5em;
+}
+.container-logo-aside{
+    max-width: 200px;
+    width: 100%;
+}
+
+.logo-aside{
+    width: 90%;
+    border-radius: 200px;
+    object-fit: cover;
+}
+
+.container-ul-aside{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+}
+
+.nav-bar-owner{
+    position: fixed;
+    left: 0;
+    display: flex;
+    z-index: 999999999;
+    top: 0;
+    margin: 0;
+    align-items: center;
+    width: 100%;
+    min-height: 56px;
+    background: #ffffff33;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    border-bottom: solid 1px #e2e8f0;
+}
+.container-logo-nav{
+    display: flex;
+    max-height: 55px;
+    width: 100%;
+    align-items: center;
+}
+.p-principal-nav{
+    font-size: 20px;
+    margin: 0;
+}
+.container-img{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.name-box{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+} 
+
+.box-right-data{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1em;
+    width: 100%;
+    margin-right: 1em;
+}
+.container-name{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.circle{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background: #C7D2FE;
+    align-items: center;
+    justify-content: center ;
+    border-radius: 50%;
+}
+.estadisticas{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: minmax(180px,auto);
+    gap: 20px;
+    padding: 1em;
+}
+
+.box{
+    padding: 20px;
+    border-radius:10px;
+    background: white;
+}
+
+
+.box2{
+    background: linear-gradient(-20deg, rgb(43, 88, 118) 0%, rgb(78, 67, 118) 100%);
+}
+.box1{
+    grid-column: span 2;
+    grid-row: span 1;
+    overflow: hidden;
+}
+.box4{
+    color: #635bff;
+    background: linear-gradient(100.66deg, rgb(67, 67, 67) 6.56%, rgb(0, 0, 0) 93.57%);
+}
+.box3{
+    place-content: center;
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.box6{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.box5{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background: linear-gradient(135deg, rgb(171, 255, 207) 0%, rgb(3, 150, 255) 100%);
+    flex-direction: column;
+}
+
+.box7{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background: linear-gradient(135deg, rgb(171, 220, 255) 0%, rgb(3, 150, 255) 100%);
+    flex-direction: column;
+}
+
+.totalPedidoCircle{
+    height: 30px;
+    width: 30px;
+    border-radius:50% ;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.listado-ingresos{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    list-style: none;
+    width: 100%;
+}
+
+.details-ingreso{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    width: 100%;
+}
+
+.p-ingreso{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.li-ingreso-ingresos{
+    display: flex;
+    width: 100%;
+}
+
+.form-gastos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.gasto-div{
+    display: flex;
+    align-items: start;
+    flex-flow: column nowrap;
+}
+
+.textarea{
+    resize: none;
+    min-height: 36px;
+    width: 250px;
+    form-sizing: content;
+    max-height: 100px;
+}
+
+.monto{
+    width: 200px;
+}
+.gastos{
+    padding: 1em;
+}
+
+.list-gastos{
+    width: 100%;
+    padding: 0;
+}
+
+.gasto-unit{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.amount-details{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.profits-bill{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-bills-profits{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+
+.ul-ingresos, .ul-gastos{
+    list-style: none;
+    border: .5px solid black;
+    padding: 0;
+}
+
+.li-gasto , .li-ingreso{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.balance-total{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.descripcion-gasto{
+    display: flex;
+    align-items: start;
+}
+
+.balance-total{
+    background: green;
+}
+
+.balance-total.negativo{
+    background: red;
+}
+.form-registro-empleados{
+    display: flex;
+    width: 100%;
+    max-width: 20em;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-registro-empleados > div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 12em;
+}
+
+.form-registro-empleados > div >input{
+    display: flex; 
+    flex-direction: column;
+    align-items: start;
+    max-width: 12em;
+    width: 100%;
+}
+
+
+
+.container-form-empleados{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-users{
+
+}
+
+.item-user-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    margin-bottom: 30px;
+}   
+
+.user{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.user-texts{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: start;
+    flex-direction: column;
+}
+
+.user-email{
+    font-size: 12px;
+    color: #8095ff;
+}
+
+.user-name{
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.estadistical-h1{
+    color: #ed0006;
+}
+
+.info-table-ingresos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+.table{
+    padding: 1em;
+}
+.container-table-inventario{
+    padding: 1em;
+}
+
+.cuadro-ingresos{
+    border:solid 1px rgb(99, 91, 255);
+    padding: .5em;
+    max-width: 11em;
+    border-radius: 12px;
+    display: flex;
+    text-align: start;
+    background: white;
+}
+.negativo-p{
+    color: red;
+}
+.positivo-p{
+    color: green;
+}
+
+.container-data-balance{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: .5em;
+}
+
+.fecha-today{
+    color: rgb(99, 91, 255);
+}
+
+.fecha-ingresos-day{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border:solid 1px rgb(99, 91, 255);
+    padding: .5em;
+    border-radius: 12px;
+    background: white;
+}
+
+.header-gasto{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+.modal-gasto{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.724);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-botones-modal-gasto{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.label-gasto{
+    color: white;
+}
+
+.form-gastos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+

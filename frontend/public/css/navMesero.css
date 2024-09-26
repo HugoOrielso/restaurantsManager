@@ -1,0 +1,60 @@
+.nav-empleado{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    background-color: #0073e6;
+}
+.ul-empleado{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center ;
+}
+.li-empleado{
+    display: flex;
+    max-width: 8em;
+}
+.a-empleado{    
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.container-logo-mesero{
+    max-width: 6em;
+    width: 100%;
+}
+.logo-mesero{
+    width: 90%;
+    padding: 1em;
+}
+
+.header-mesero{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.a-empleado{
+    color: white;
+    text-decoration: none;
+    background: blue;
+    padding: .5em;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+
+.a-empleado:hover{
+    background-color: rgb(14, 13, 82);
+}
+
+.a-empleado.active{
+    background-color: rgb(14, 13, 82);  
+}

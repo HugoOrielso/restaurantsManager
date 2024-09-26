@@ -1,0 +1,17 @@
+.dataTable{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.dataGrid{
+    background: white;
+}
+
+.img-avatar-producto{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+

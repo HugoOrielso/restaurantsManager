@@ -1,0 +1,274 @@
+.list-mesas{
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,minmax(150px , 1fr)
+    );
+    list-style: none;
+    gap: 1em;
+    padding: 0;
+}
+.main-mesas{
+    width: 100%;
+    max-width: 1480px;
+    align-items: center;
+    place-content: center;
+    place-items: center;
+}
+.mesas{
+    display: flex;
+    width: 100%;
+    flex-flow: column nowrap;
+}
+.container-mesa{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5em;
+}
+.mesa{
+    display: flex;
+    text-decoration: none;
+    min-width: 3.5em;
+    min-height: 3.5em;
+    align-items: center;
+    justify-content: center ;
+    background: #34a853;
+    color: white;
+    border-radius: 15px;
+    transition: all .5s ease;
+    padding: 1em;
+}
+.mesa.ocupada{
+    background-color: red;
+}
+
+.mesa:hover{
+    transform: scale(.95);
+}
+
+.mesa:active{
+    transform: scale(1.095);
+}
+
+.btn-car{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4em;
+    fill: white;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 4em;
+    border-radius: 50%;
+    background: blue;
+}
+
+.list-products{
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fill,minmax(250px,1fr)
+    );
+    list-style: none;
+    gap: 1em;
+    place-content: center;
+    padding-right: 2em;
+    padding-top: 2em;
+}
+
+.product{
+    display: flex;
+    align-items: start;
+    flex-flow: column nowrap;
+}
+.product-conntroll-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.btn-cart{
+    max-width: 5em;
+    padding: .5em;
+    width: 100%;
+    background: #34a853;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.btn-remove{
+    max-width: 5em;
+    padding: .5em;
+    width: 100%;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;}
+.footer {
+    position: fixed;
+    left: 16px;
+    bottom: 16px;
+    text-align: left;
+    background: rgba(0, 0, 0, .7);
+    padding: 8px 24px;
+    border-radius: 32px;
+    opacity: .95;
+    backdrop-filter: blur(8px);
+  }
+  
+  .footer span {
+    font-size: 14px;
+    color: #09f;
+    opacity: .8;
+  }
+  
+  .footer h4, .footer h5 {
+    margin: 0;
+    display: flex;
+  }
+
+  .price-total{
+    display: flex;
+    color: white;
+  }
+
+  .pagos-butons{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .butons-methods{
+    display: flex ;
+    gap: .5em;
+  }
+
+  .pedidoEnCurso-detalle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    /* grid-template-columns: repeat(auto-fill,minmax(250px,1fr)); */
+    place-content: center;
+    width: 100%;
+    max-width: 30em;
+  }
+  .factura{
+    display: grid;
+    grid-template-columns: 22em 8em;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .p-factura{
+    display: flex;
+    flex-direction: column;
+  }
+  .detail-bill{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+  .factura-name{
+    display: flex;
+    align-items: start;
+    flex-flow: column nowrap;
+  }
+  .total{
+    display: flex;
+    width: 100% ;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .unidades{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    min-width: 4em;
+  }
+
+  .p-factura{
+    margin: 0;
+  }
+
+  .controll-producs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+  .controll-price{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 1em;
+  }
+
+  .header-pedido-detail{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    width: 100%;
+  }
+
+  .container-factura{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-detail{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-detail.numbers{
+    display: flex;
+    align-items: start;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .header-detail.numbers > p{
+    margin: 0;
+  }
+
+  .details-name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .produc-units{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 20em;
+    width: 100%;
+  }
+  .units-total{
+    display: grid;
+    grid-template-columns: 22em 8em;
+  }
+
+  .multiplicacion{
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .multiplicacion > p{
+    display: flex;
+    width: 100%;
+  }
+
+  .observaciones{
+    display: flex;
+    margin: 1em;
+    width: 100%;
+  }
+  

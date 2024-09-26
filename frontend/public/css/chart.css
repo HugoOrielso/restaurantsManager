@@ -1,0 +1,69 @@
+.chartBox{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.boxInfo{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+.box{
+    border: 1px  solid rgb(31, 38, 46);
+}
+
+.box2{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    flex-direction: column;
+}
+.chartInfo{
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.chart{
+    height: 100%;
+    width: 100%;
+}
+
+.texts{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.titleChart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+}
+
+.container-max-ventas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.container-grafico-torta{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.info-max-ventas{
+    display: flex;
+    flex: 1;
+}
+
+/* //#dadce0   #E8F0FE*/

@@ -1,0 +1,75 @@
+CREATE DATABASE pizzeria_venecia;
+
+USE pizzeria_venecia;
+
+CREATE TABLE IF NOT EXISTS propietario(
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(50) NOT NULL,
+    email VARCHAR(70) NOT NULL,
+    password VARCHAR(100) NOT NULL,
+    rol INT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS usuario(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    email VARCHAR(70) NOT NULL UNIQUE,
+    password VARCHAR(100) NOT NULL,
+    rol INT NOT NULL,
+    sub_rol INT,
+    identification VARCHAR(50) NOT NULL DEFAULT (UUID())
+);
+
+CREATE TABLE IF NOT EXISTS gastos(
+    id_gasto INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	identificacion VARCHAR(50) NOT NULL DEFAULT (UUID()),
+    description TEXT,
+    fecha DATE DEFAULT TIMESTAMP(NOW()),
+    monto INT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS productos (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    producto_id VARCHAR(50) NOT NULL DEFAULT (UUID()),
+    nombre VARCHAR(100) NOT NULL,
+    precio INT NOT NULL,
+    categoria VARCHAR(100) NOT NULL,
+    subcategoria VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS pedidos (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    pedido_id VARCHAR(50) DEFAULT (UUID()),
+    fecha_pedido DATE NOT NULL DEFAULT TIMESTAMP(NOW()),
+    tipo VARCHAR(50) NOT NULL,
+    mesa INT,
+    estado VARCHAR(50) NOT NULL,
+    pago VARCHAR(50) NOT NULL,
+    direccion TEXT, 
+    total INT,
+    usuario_encargado TEXT,
+    vueltos TEXT,
+    observaciones TEXT
+);
+
+CREATE TABLE IF NOT EXISTS detalles_pedido (
+    id INT NOT NULL,
+    detalle_id VARCHAR(50) DEFAULT (UUID()) PRIMARY KEY,
+    producto_id VARCHAR(50),
+    cantidad INT NOT NULL,
+    precio_unitario INT NOT NULL,
+    total INT NOT NULL,
+    estado VARCHAR(255),
+    FOREIGN KEY (id) REFERENCES pedidos(id)
+);
+
+CREATE TABLE IF NOT EXISTS mesas(
+    mesa INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    ocupada INT NOT NULL
+)
+
+
+INSERT INTO mesas(mesa,ocupada) VALUES (1,1), (2,1), (3,1), (4,1), (5,1);
+
+
+

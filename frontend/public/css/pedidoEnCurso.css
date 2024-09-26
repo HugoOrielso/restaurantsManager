@@ -1,0 +1,101 @@
+.pedido-mesa-en-curso{
+    display: flex;
+    flex-direction: column;
+    max-width: 25em;
+    width: 100%;
+    padding: 1em;
+}
+
+.date-en-curso{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-right: 1em;
+    border-left: .1px solid black;
+}
+.header-en-curso{
+    display: grid;
+    grid-template-columns: 10em 1fr;
+    align-items: center;
+    width: 100%;
+    border: .1px solid black;
+}
+
+.name-cantidad{
+    display: grid;
+    grid-template-columns: 1fr 1.5em 6.5em;
+    width: 100%;
+}
+.name-cantidad > div{
+    display: flex;
+    width: 100%;
+}
+
+.name-start{
+    display: flex;
+    align-items: start;
+    border: .1px solid black;
+}
+
+.title-detalle{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border: .1px solid black;
+
+}
+
+.cantidades{
+    display: flex;
+    width: 100%;
+    border: .1px solid black;
+    align-items: center;
+    justify-content: center;
+}
+.total-detalle{
+    display: flex;
+    width: 100%;
+    border: .1px solid black;
+    align-items: start;
+    justify-content: end;
+
+}
+
+.cantidades >p{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.footer-en-curso{
+    display: flex;
+    width: 100%;
+    border: .1px solid black;
+    flex-direction: column;
+}
+
+.footer-en-curso > div{
+    display: flex;
+}
+
+.total-orden{
+    border-bottom: .1px solid black;
+
+}
+.footer-en-curso > div:nth-child(1){
+    align-items: end;
+    justify-content: end;
+}
+
+.finalizar-orden{
+    display: flex;
+}
+
+.div-botones-acciones{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 1em;
+}

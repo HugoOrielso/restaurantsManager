@@ -1,0 +1,32 @@
+.navDomi{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    padding: .5em;
+}
+
+.navDomi ul{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    list-style: none;
+}
+
+.navDomi ul > li > a{
+    text-decoration: none;
+    color: white;
+    background: blue;
+    padding: .7em;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+.navDomi ul > li > a:hover{
+    text-decoration: none;
+    color: white;
+    background: rgb(6, 6, 96);
+    padding: .7em;
+    border-radius: 10px;
+}
+

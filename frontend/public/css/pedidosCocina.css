@@ -1,0 +1,131 @@
+.container-pedido-cocina{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 1em;
+    padding: .5em;
+}
+.pedido-cocina{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: .5em;
+    margin: 0;
+    border: .5px solid black;
+    border-radius: 10px;
+}
+.pedido-cocina-owner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: .5em;
+    background: white;
+    margin: 0;
+    border: .5px solid black;
+    border-radius: 10px;
+}
+
+.id-pedido{
+    margin: 0;
+    text-align: start;
+    padding: 0;
+}
+
+.ul-detalle-pedido-en-curso{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: start;
+    padding: 0;
+    margin: 0;
+}
+
+.subcategory{
+    color: rgb(50, 49, 49);
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.name-subcategory{
+    display: flex;
+    align-items: center;
+}
+.span-price-cocinero{
+    font-size: 12px;
+}
+.span-producto-cocinero{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.informacion-cocina{
+    display: flex;
+    gap: 4px;
+    justify-content: space-between  ;
+    width: 100%;
+}
+
+.li-render-detalle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.tipo-pedido{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: start;
+}
+
+.tipo-pedido > p{
+    padding: 0;
+    margin: 0; 
+}
+
+.tipo-mesa {
+    color: red;
+}
+
+.tipo-delivery{
+    color: blue;
+}
+
+.detail-observaciones{
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+    text-align: start;
+}
+
+.p-observaciones{
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    color: blue;
+}
+
+.ruta-domi{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+  }
+.btn-entregar {
+    width: 100%;
+    border: 2px solid #315cfd;
+    border-radius: 45px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: white;
+    font-size: 16px;
+    font-weight: 550;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .btn-entregar:hover {
+    background: #315cfd;
+    color: white;
+  }
+
